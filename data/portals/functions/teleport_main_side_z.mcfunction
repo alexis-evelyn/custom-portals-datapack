@@ -6,6 +6,10 @@ execute as @s in minecraft:overworld run tp ~-1.5 ~ ~
 
 # Rudimentary Portal Creation
 
+# Air Above Bridge Layer 1
+
+# Air Above Bridge Layer 2
+
 # Bridge Layer 1
 execute as @s in minecraft:overworld run setblock ~-1 ~-1 ~-1 minecraft:crying_obsidian keep
 execute as @s in minecraft:overworld run setblock ~-1 ~-1 ~ minecraft:crying_obsidian keep
@@ -41,4 +45,4 @@ execute as @s in minecraft:overworld run setblock ~ ~1 ~-1 minecraft:crying_obsi
 execute as @s in minecraft:overworld run setblock ~ ~2 ~-1 minecraft:crying_obsidian keep
 
 # Portal Frames
-execute as @s in minecraft:overworld run fill ~ ~0 ~2 ~ ~2 ~-1 minecraft:nether_portal[axis=z] keep
+execute as @s in minecraft:overworld run fill ~ ~0 ~1 ~ ~2 ~ minecraft:nether_portal[axis=z] keep

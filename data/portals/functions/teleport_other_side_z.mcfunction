@@ -41,4 +41,4 @@ execute as @s in alexis:glass run setblock ~ ~1 ~-1 minecraft:crying_obsidian ke
 execute as @s in alexis:glass run setblock ~ ~2 ~-1 minecraft:crying_obsidian keep
 
 # Portal Frames
-execute as @s in alexis:glass run fill ~ ~0 ~2 ~ ~2 ~-1 minecraft:nether_portal[axis=z] keep
+execute as @s in alexis:glass run fill ~ ~0 ~1 ~ ~2 ~ minecraft:nether_portal[axis=z] keep
