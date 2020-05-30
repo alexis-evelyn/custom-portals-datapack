@@ -7,7 +7,7 @@ scoreboard objectives remove skip_fire
 forceload remove 0 0
 
 # Remove Armor Stand Used For Data Storage
-kill @e[name=CustomPortalsDataStorage, type=minecraft:armor_stand]
+execute positioned 0 -10 0 as @e[name=CustomPortalsDataStorage, type=minecraft:armor_stand, distance=..1] at @s run kill @s
 
 # Announce Uninstall
 tellraw @p ["",{"text":"Uninstalled Custom Portals Datapack!!! ","bold":false,"color":"aqua"},{"text":"Click here for the command to reinstall the datapack in the future!!!","bold":false,"underlined":true,"color":"gold","clickEvent":{"action":"suggest_command","value":"/function portals:init"}}]
