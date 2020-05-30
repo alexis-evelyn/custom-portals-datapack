@@ -6,14 +6,11 @@ execute as @s in alexis:glass run tp ~-1.5 ~ ~
 
 # Rudimentary Portal Creation
 
-# Bridge Layer 1
-execute as @s in alexis:glass run fill ~-1 ~-1 ~-1 ~-1 ~-1 ~2 minecraft:crying_obsidian keep
+# Air Above Bridge Layer 1 and 2
+execute as @s in alexis:glass run fill ~-1 ~ ~ ~-2 ~2 ~1 minecraft:air replace
 
-# Bridge Layer 2
-execute as @s in alexis:glass run fill ~-2 ~-1 ~-1 ~-2 ~-1 ~2 minecraft:crying_obsidian keep
-
-# Base Layer
-execute as @s in alexis:glass run fill ~ ~-1 ~-1 ~ ~-1 ~2 minecraft:crying_obsidian keep
+# Bridge Layer 1, 2 and Base Layer
+execute as @s in alexis:glass run fill ~ ~-1 ~-1 ~-2 ~-1 ~2 minecraft:crying_obsidian keep
 
 # Top Layer
 execute as @s in alexis:glass run fill ~ ~3 ~-1 ~ ~3 ~2 minecraft:crying_obsidian keep
