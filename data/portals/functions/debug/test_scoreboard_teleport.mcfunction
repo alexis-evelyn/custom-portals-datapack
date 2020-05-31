@@ -27,7 +27,7 @@ tag @a[x=0] add teleport_target
 
 # Run Teleport Helper
 # Noted By: https://www.reddit.com/r/MinecraftCommands/comments/fd1lds/new_method_to_tp_to_scoreboard_values/
-execute as @e[type=armor_stand, name=TemporaryDynamicTeleporter, limit=1] run function portals:teleport_armorstand_helper
+execute as @e[type=armor_stand, name=TemporaryDynamicTeleporter, limit=1] run function portals:debug/teleport_armorstand_helper
 
 # Remove Tag Marking Player
 tag @p[tag=teleport_target] remove teleport_target

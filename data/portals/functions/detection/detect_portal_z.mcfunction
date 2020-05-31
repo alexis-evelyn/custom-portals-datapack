@@ -35,4 +35,4 @@ execute as @e[type=minecraft:armor_stand, name=Found] at @s if block ~ ~3 ~-1 #m
 
 # Verify Proper Portal Creation
 # NOTE: Use Barrier Blocks Above Then Set To Nether Portal Blocks on Z Axis
-function portals:verify_portal_z
+function portals:verification/verify_portal_z

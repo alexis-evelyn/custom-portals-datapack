@@ -21,4 +21,4 @@ execute positioned 0 -10 0 as @e[name=CustomPortalsDataStorage, type=minecraft:a
 # Namely Other Side and Main Side
 
 # Announce Uninstall
-tellraw @p ["",{"text":"Uninstalled Custom Portals Datapack!!! ","bold":false,"color":"aqua"},{"text":"Click here for the command to reinstall the datapack in the future!!!","bold":false,"underlined":true,"color":"gold","clickEvent":{"action":"suggest_command","value":"/function portals:init"}}]
+tellraw @p ["",{"text":"Uninstalled Custom Portals Datapack!!! ","bold":false,"color":"aqua"},{"text":"Click here for the command to reinstall the datapack in the future!!!","bold":false,"underlined":true,"color":"gold","clickEvent":{"action":"suggest_command","value":"/function portals:main/init"}}]

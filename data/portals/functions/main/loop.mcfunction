@@ -1,0 +1,3 @@
+function portals:detection/detect_lighting
+
+function portals:teleportation/teleport_player
