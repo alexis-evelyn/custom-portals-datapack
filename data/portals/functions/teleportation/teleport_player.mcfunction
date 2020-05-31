@@ -7,13 +7,8 @@
 # execute as @s store result score @s player_y run data get entity @s Pos[1]
 # execute as @s store result score @s player_z run data get entity @s Pos[2]
 
-# Lazy Check For Portal Direction Z
-execute in alexis:glass as @a[x=0] at @s if block ~ ~-1 ~ #minecraft:portal_frame if block ~ ~ ~ #minecraft:portal_wall[axis=z] run function portals:teleportation/main/teleport_main_side_z
+# Function to Run on Main Side Teleportation
+function portals:teleportation/main/teleport_main_side
 
-execute in minecraft:overworld as @a[x=0] at @s if block ~ ~-1 ~ #minecraft:portal_frame if block ~ ~ ~ #minecraft:portal_wall[axis=z] run function portals:teleportation/other/teleport_other_side_z
-
-
-# Lazy Check For Portal Direction X
-execute in alexis:glass as @a[x=0] at @s if block ~ ~-1 ~ #minecraft:portal_frame if block ~ ~ ~ #minecraft:portal_wall[axis=x] run function portals:teleportation/main/teleport_main_side_x
-
-execute in minecraft:overworld as @a[x=0] at @s if block ~ ~-1 ~ #minecraft:portal_frame if block ~ ~ ~ #minecraft:portal_wall[axis=x] run function portals:teleportation/other/teleport_other_side_x
+# Function to Run on Other Side Teleportation
+function portals:teleportation/other/teleport_other_side
