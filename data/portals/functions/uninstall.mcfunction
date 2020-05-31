@@ -4,9 +4,12 @@ scoreboard objectives remove used_firecharge
 scoreboard objectives remove search_fire
 scoreboard objectives remove skip_fire
 
-scoreboard objectives add player_x dummy
-scoreboard objectives add player_y dummy
-scoreboard objectives add player_z dummy
+scoreboard objectives remove player_x
+scoreboard objectives remove player_y
+scoreboard objectives remove player_z
+
+scoreboard objectives remove player_rx
+scoreboard objectives remove player_ry
 
 # Remove Forceloading of 0, 0 (Previously Used for Data Storage)
 forceload remove 0 0

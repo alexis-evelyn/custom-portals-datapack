@@ -13,6 +13,10 @@ scoreboard objectives add player_x dummy
 scoreboard objectives add player_y dummy
 scoreboard objectives add player_z dummy
 
+# Used to Temporarily Store Player Rotation Before Initial Teleportation
+scoreboard objectives add player_rx dummy
+scoreboard objectives add player_ry dummy
+
 # Announce Install if Fresh Install
 execute unless entity @e[name=CustomPortalsDataStorage, type=minecraft:armor_stand] run tellraw @p ["",{"text":"Installed Custom Portals Datapack!!! ","color":"aqua", "bold":false},{"text":"Click here for the command to uninstall the datapack in the future!!!", "color": "gold", "bold": false, "underlined": true, "clickEvent": {"action":"suggest_command","value":"/function portals:uninstall"}}]
 
