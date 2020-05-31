@@ -7,6 +7,12 @@ execute store result entity @s Pos[2] double 1 run scoreboard players get @p[tag
 execute store result entity @s Rotation[0] float 1 run scoreboard players get @p[tag=teleport_target] player_rx
 execute store result entity @s Rotation[1] float 1 run scoreboard players get @p[tag=teleport_target] player_ry
 
+
+# TODO: Figure Out Why Not TP TO OTHER SIDE AND BACK
+
+# Debug Positioning
+execute at @s run function portals:debug/debug_positioning
+
 # Teleport Player to Armor Stand and Rotate Player in the Same Direction as Armor Stand
 execute at @s run tp @p[tag=teleport_target] ~ ~ ~ ~ ~
 

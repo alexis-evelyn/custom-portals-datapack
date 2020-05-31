@@ -1,15 +1,18 @@
-tp @a[x=0] 0 56 0 0 0
-
 # Store Player Coordinates
-scoreboard players set @a[x=0] player_x 10000
-scoreboard players set @a[x=0] player_y 56
-scoreboard players set @a[x=0] player_z 10000
+execute as @s store result score @s player_x run data get entity @s Pos[0]
+execute as @s store result score @s player_y run data get entity @s Pos[1]
+execute as @s store result score @s player_z run data get entity @s Pos[2]
 
 # Store Player Rotation
-scoreboard players set @a[x=0] player_rx 35
-scoreboard players set @a[x=0] player_ry 50
+execute as @s store result score @s player_rx run data get entity @s Rotation[0]
+execute as @s store result score @s player_ry run data get entity @s Rotation[1]
 
-# TODO: Put force load code here!!!
+# Tag Player
+tag @s add teleport_target
 
-# Execute Debug Function to Test Teleportation
-function portals:debug_test_scoreboard_teleport
+# Run Teleport Helper
+# Noted By: https://www.reddit.com/r/MinecraftCommands/comments/fd1lds/new_method_to_tp_to_scoreboard_values/
+execute as @e[type=armor_stand, name=TemporaryDynamicTeleporter, limit=1] run function portals:teleportation/positioning/teleport_armorstand_helper
+
+# Remove Tag Marking Player
+tag @p[tag=teleport_target] remove teleport_target

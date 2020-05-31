@@ -1,0 +1,2 @@
+# Summon Armor Stand at Player Position
+execute at @s run summon minecraft:armor_stand ~ ~ ~ {CustomName:"\"TemporaryDynamicTeleporter\"", NoGravity: true, CustomNameVisible: false, Invisible: true, Marker: true}
