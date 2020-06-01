@@ -1,3 +1,5 @@
+# NOTE: This is being run as TemporaryDynamicTeleporter
+
 # Rudimentary Portal Creation
 
 # Air Above Bridge Layer 1 and 2

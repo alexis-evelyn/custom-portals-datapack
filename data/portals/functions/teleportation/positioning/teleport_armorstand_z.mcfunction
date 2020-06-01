@@ -8,7 +8,7 @@ execute as @s store result score @s player_rx run data get entity @s Rotation[0]
 execute as @s store result score @s player_ry run data get entity @s Rotation[1]
 
 # Testing If Player is Sent Through Opposite Portal in Same Tick (They are Not)
-scoreboard players remove @s player_x 2
+scoreboard players remove @s player_x 1
 
 # Tag Player
 tag @s add teleport_target
