@@ -13,5 +13,8 @@ execute store result entity @s Rotation[1] float 1 run scoreboard players get @p
 # Teleport Player to Armor Stand and Rotate Player in the Same Direction as Armor Stand
 execute at @s run tp @p[tag=teleport_target] ~ ~ ~ ~ ~
 
+# Generate Portal On Opposite Side of Player Prior to Teleportation
+execute at @s run function portals:generation/generate_portal_x
+
 # Kill Armor Stand
 kill @s
