@@ -8,10 +8,7 @@
 execute as @e[type=armor_stand, name=TemporaryDynamicTeleporter, limit=1] run tp @s @e[name=CustomPortalsOtherSideMarker, type=armor_stand, limit=1]
 
 # Teleport Armorstand to Player Position
-function portals:teleportation/positioning/teleport_armorstand
-
-# Teleport Player Offset From Portal
-execute as @s run tp ~ ~ ~-1.5
+function portals:teleportation/positioning/teleport_armorstand_x
 
 # Rudimentary Portal Creation
 
