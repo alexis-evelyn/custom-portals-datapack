@@ -32,4 +32,9 @@ execute if entity @s[tag=success_1] run tag @s add success
 execute if entity @s[tag=success_2] run tag @s add success
 
 # If Failed, Set Fire Back - For some reason, this script runs twice when a successful portal is made (and once when it fails), so I have to check for a portal wall to ensure it only runs once when a successful portal is made
-execute unless entity @s[tag=success] unless block ~ ~1 ~ #minecraft:portal_wall run setblock ~ ~ ~ minecraft:fire
+
+# If Not Soul Fire Block, Place Regular Fire
+execute unless entity @s[tag=success] unless block ~ ~1 ~ #minecraft:portal_wall unless block ~ ~-1 ~ #minecraft:soul_fire_base_blocks run setblock ~ ~ ~ minecraft:fire
+
+# If Soul Fire Block, Place Soul Fire
+execute unless entity @s[tag=success] unless block ~ ~1 ~ #minecraft:portal_wall if block ~ ~-1 ~ #minecraft:soul_fire_base_blocks run setblock ~ ~ ~ minecraft:soul_fire
