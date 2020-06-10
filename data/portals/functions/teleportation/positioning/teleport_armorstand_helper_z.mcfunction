@@ -18,3 +18,6 @@ execute at @s run function portals:generation/generate_portal_z
 
 # Kill Armor Stand
 kill @s
+
+# Reset Player's XP Level - To Fix Bug With Instant Teleportation
+execute as @p[tag=teleport_target] run function portals:main/fix_xp
